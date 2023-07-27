@@ -62,17 +62,6 @@ class: inverse, center, middle
 
 ---
 
-<br>
-
-# ESA is administered by two federal agencies
-
-.pull-left-img[![](figs/usfws_logo.svg)]
-
-.pull-right-img[![](figs/nmfs_logo.png)]
-
-
----
-
 # Key provisions of the ESA
 
 .blue-text[
@@ -917,12 +906,16 @@ background-size: 75%
 
 # Size of salmon matters because...
 
+.green-text[
+### Bigger females have more eggs, bigger eggs & are likely more productive
+]
+
 .blue-text[
-### bigger females have more eggs, bigger eggs & are likely more productive
+### Fisheries are managed on a per-fish basis & thus smaller fish mean less food
+]
 
-### fisheries are managed on a per-fish basis & thus smaller fish mean less food
-
-### smaller fish may signal problems with habitat
+.orange-text[
+### Smaller fish may signal problems with habitat
 ]
 
 
