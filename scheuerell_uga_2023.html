@@ -55,7 +55,7 @@ class: inverse, center, middle
 # ESA status reviews
 
 .blue-text[
-### Required every 5 years to ensure listed species have appropriate protections
+### Required every 5 years to ensure appropriate protections
 
 ### Considerations include
 ]
@@ -71,22 +71,22 @@ class: inverse, center, middle
 
 ---
 
-# 4 possible outcomes of ESA status reviews
+# ESA status reviews
 
-.red-text[
-### 1. Reclassify from threatened to endangered (uplist)
+.gray-text[
+### Required every 5 years to ensure appropriate protections
+
+### Considerations include
 ]
 
-.blue-text[
-### 2. Maintain at current classification
-]
+* ### .green-text[population trends].gray-text[, distribution, demographics &amp; genetics]
 
-.green-text[
-### 3. Reclassify from endangered to threatened (downlist)
-]
+.gray-text[
+* ### habitat conditions
 
-.green-text[
-### 4. Remove from the list (delist)
+* ### past conservation measures
+
+* ### status &amp; trends of threats
 ]
 
 
@@ -539,40 +539,80 @@ background-size: 95%
 # Varying sampling methods
 
 .blue-text[ 
-### Different methods have different levels of observation errors&lt;br&gt;(eg, weir counts are more accurate than snorkel surveys)
+## Different methods have different observation errors
 
-### Multiple surveys of each type help inform the variance estimates 
+## Ex: Weir counts are more precise than snorkel surveys
 ]
 
+
+---
+
+class: center, middle, inverse
+
+# Multiple surveys of each type help inform the variance estimates 
+
+
+---
+
+# Observation model for multiple time series
+
+## .center.blue-text[ Example of 5 popns across 2 core areas (A &amp; B) ]
+
+`$$\begin{gathered}
+    y_{1,t} = x_{A,t} + v_{1,t} \\
+    y_{2,t} = x_{A,t} + v_{2,t} \\
+    \hline 
+    y_{3,t} = x_{B,t} + v_{3,t} \\
+    y_{4,t} = x_{B,t} + v_{4,t} \\
+    y_{5,t} = x_{B,t} + v_{5,t}
+  \end{gathered}$$`
+
+
+---
+
+# Observation model for multiple time series
+
+## .center.blue-text[ Example of 5 popns, 2 core areas via 2 methods (i &amp; j)]
+
+`$$\begin{gathered}
+    v_{1,t} \sim \text{N}(0, r_i) \\
+    v_{2,t} \sim \text{N}(0, r_j) \\
+    \hline 
+    v_{3,t} \sim \text{N}(0, r_j) \\
+    v_{4,t} \sim \text{N}(0, r_i) \\
+    v_{5,t} \sim \text{N}(0, r_j)
+  \end{gathered}$$`
+
+
 ---
 
 # Fitting the models
 
-### .blue-text[ We used the 30-year time period from 1991-2020 ]
+## .blue-text[ Used the 30-year time period from 1991-2020 ]
 
-### .blue-text[ Time series needed at least 10 years of non-missing data ]
+## .blue-text[ Time series needed &amp;ge;10 years of non-missing data ]
 
 
 ---
 
 # Fitting the models
 
-### .blue-text[ We used the 30-year time period from 1991-2020 ]
+## .blue-text[ Used the 30-year time period from 1991-2020 ]
 
-### .blue-text[ Time series needed at least 10 years of non-missing data ]
+## .blue-text[ Time series needed &amp;ge;10 years of non-missing data ]
 
-### .green-text[ All models were fit in **R** using the `{MARSS}` package ]
+## .green-text[ All models fit in **R** using the `{MARSS}` package ]
 
-### .green-text[ I estimated 90% confidence intervals on bias terms ]
+## .green-text[ Estimated 90% confidence intervals on bias terms ]
 
 
 ---
 
 # Bias in trends
 
-### .blue-text[ 37/62 core areas had a negative trend ]
+## .blue-text[ 37/62 core areas had a negative trend ]
 
-### .center.blue-text[ but only 3/61 were "signficantly" negative ]
+## .center.blue-text[ but only 3/61 were "signficantly" negative ]
 
 
 ---
@@ -599,15 +639,15 @@ background-size: 80%
 
 # Bias in trends
 
-### .blue-text[ 37/62 core areas had a negative trend ]
+## .blue-text[ 37/62 core areas had a negative trend ]
 
-### .center.blue-text[ but only 3/62 were "signficantly" negative ]
+## .center.blue-text[ but only 3/62 were "signficantly" negative ]
 
 &lt;br&gt;
 
-### .green-text[ 25/62 core areas had a positive trend ]
+## .green-text[ 25/62 core areas had a positive trend ]
 
-### .center.green-text[ but only 5/62 were "signficantly" positive ]
+## .center.green-text[ but only 5/62 were "signficantly" positive ]
 
 
 ---
@@ -807,6 +847,16 @@ background-size: 70%
 ### Anglers may motor to fishing areas, but then they must drift &amp; use the classic "mooching" technique
 
 ]
+
+
+---
+
+class: frimg, center
+background-image: url(figs/mooching_rig.jpg)
+background-position: 50% 55%
+background-size: 80%
+
+# Salmon mooching rig
 
 
 ---
@@ -1042,7 +1092,7 @@ Purse seiner: *Jim Borrow*
 
 ## Presentation
 
-### https://github.com/mdscheuerell/safs-seminar-2021
+### https://github.com/mdscheuerell/uga-seminar-2023
 
 .futnote.purple-text[&lt;svg viewBox="0 0 512 512" style="height:1em;position:relative;display:inline-block;top:.1em;fill:#844870;" xmlns="http://www.w3.org/2000/svg"&gt;  &lt;path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"&gt;&lt;/path&gt;&lt;/svg&gt; scheuerl@uw.edu]
 
