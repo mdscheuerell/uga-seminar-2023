@@ -1,6 +1,7 @@
 ---
 output:
   xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
     css: "my-theme.css"
     lib_dir: libs
     nature:
@@ -58,27 +59,6 @@ class: middle
 class: inverse, center, middle
 
 # There are over 1500 species listed under the Endangered Species Act
-
-
----
-
-# Key provisions of the ESA
-
-.blue-text[
-### Determine whether species are threatened or endangered (&sect;4)
-]
-
-.purple-text[
-### Agencies will use their authorities to conserve listed species (&sect;7)
-]
-
-.purple-text[
-### Agencies cannot jeopardize listed species' existence or destroy critical habitat (&sect;7)
-]
-
-.red-text[
-### It's illegal to kill, harm or harass ("take") a listed species (&sect;9)
-]
 
 
 ---
